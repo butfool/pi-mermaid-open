@@ -1,6 +1,6 @@
 {
   "name": "@butcool/pi-mermaid-open",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Find skipped Mermaid diagrams and open them in the system image viewer.",
   "keywords": [
     "pi-package",

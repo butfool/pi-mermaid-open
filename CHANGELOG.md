@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.3.2] - 2026-11-03
+
+- Publish through npm trusted publishing, so the release carries a provenance statement.
+
 ## [0.3.1] - 2026-11-03
 
 First release of this fork as `@butcool/pi-mermaid-open`.
