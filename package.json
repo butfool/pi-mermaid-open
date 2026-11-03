@@ -1,0 +1,58 @@
+{
+  "name": "@butcool/pi-mermaid-open",
+  "version": "0.3.1",
+  "description": "Find skipped Mermaid diagrams and open them in the system image viewer.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "mermaid",
+    "diagram",
+    "image-viewer"
+  ],
+  "homepage": "https://github.com/butfool/pi-mermaid-open#readme",
+  "bugs": "https://github.com/butfool/pi-mermaid-open/issues",
+  "license": "MIT",
+  "author": "butfool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butfool/pi-mermaid-open.git"
+  },
+  "files": [
+    "src/**/*.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "grok-mermaid": "0.2.2"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.0",
+    "@earendil-works/pi-tui": "^1.5.0",
+    "@tsconfig/node24": "24.0.5",
+    "@tsconfig/strictest": "2.0.8",
+    "@types/node": "^24",
+    "typescript": "7.0.2"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
